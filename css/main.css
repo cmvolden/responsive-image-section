@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: sans-serif;
+  font: normal 100%/1.3 sans-serif;
 }
 
 *, *::before, *::after {
@@ -19,12 +19,98 @@ html {
 
 body {
   margin: 0;
+  background-color: #e2e2e2;
 }
 
+h1 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
 
+p {
+  margin: 0;
+  padding-bottom: 2rem;
+}
 
+section {
+  display: inline-block;
+}
 
+a {
+  margin: 0;
+  text-decoration: none;
+  border-radius: 4px;
+  border-color: #555;
+  background-color: #555;
+  color: #fff;
+  padding: .5em .75em;
+}
 
-.img-flex {
+img {
   width: 100%;
+}
+
+.content {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+  }
+
+  .content {
+    width: 48%;
+    padding: 1.5rem;
+    text-align: left;
+  }
+
+  h1 {
+    padding-bottom: 2rem;
+  }
+
+  p {
+      padding-bottom: 2rem;
+    }
+
+  .img-flex {
+    max-width: 50%;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
 }
